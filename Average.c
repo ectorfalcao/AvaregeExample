@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include <string.h>//não usei desculpa achei que usaria
+#include <string.h>//não usei, desculpa achei que usaria
 int i;
     struct aluno{
         int matricula;
@@ -13,7 +13,12 @@ int main(){
     char name;
     struct aluno aluno1;
    printf("Digite o nome do aluno: ");
-   scanf("%49s", aluno1.nome);
+    //não é pra usar o &
+    //vai referenciar o array e não o primeiro char no array
+    //é só fazer sem o & quando for armazenar algo em um array e neste caso que estamos usando apenas uma linha é só colocar o nome dele
+    //caso houvessem mais linhas, referenciaria a linha com aluno1.nome[X]
+    //sem nada é como dizer aluno1.nome[0]
+   scanf("%49s", aluno1.nome); 
    printf("Digite a matrícula: ");
    scanf("%d", &aluno1.matricula);
    printf("Digite a 1a nota:");
