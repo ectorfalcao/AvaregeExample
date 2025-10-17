@@ -1,3 +1,5 @@
+//Versão de teste para algumas coisas
+//Desconsidere esta versão
 
 #include <stdio.h>
 #include <string.h>//não usei, desculpa achei que usaria
