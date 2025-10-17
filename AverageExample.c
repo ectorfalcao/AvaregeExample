@@ -1,4 +1,4 @@
-
+//Versão final para apresentar a atividade
 #include <stdio.h>
 #include <string.h>//não usei, desculpa achei que usaria
 #include <stdlib.h> //a gente vai alocar e limpar espaço 
